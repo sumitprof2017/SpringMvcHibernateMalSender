@@ -6,12 +6,21 @@
 	http://www.springframework.org/schema/security/spring-security-3.2.xsd">
 
 	<http auto-config="true">
+<!--            yo intercept le dashboard content haru url ma ayo vane kholna didaina-->
 		<intercept-url pattern="/admin**" access="ROLE_USER" />
 		<intercept-url pattern="/dashboard**" access="ROLE_USER" />
                 <intercept-url pattern="/addallcontent**" access="ROLE_USER" />
                 <intercept-url pattern="/content**" access="ROLE_USER" />
                 <intercept-url pattern="/contentform**" access="ROLE_USER" />
                
+<!--                login-page le /springlogin localhost:8080/springlogin auxa -->
+<!--                    login vaeepaxi welcome page kholxa
+                failure vo vane error pathauxa url ma josle garda map hunxa ani 
+                controller bata error msg auxa invalid username password vanera
+                
+                
+                
+                -->
 		<form-login 
 		    login-page="/springlogin" 
 		    default-target-url="/welcome" 

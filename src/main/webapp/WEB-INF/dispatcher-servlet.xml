@@ -97,6 +97,9 @@ http://www.springframework.org/schema/tx http://www.springframework.org/schema/t
          
           <mvc:resources mapping="/assets/**" location="/assets/"
     cache-period="31556927"/>
+          
+            <mvc:resources mapping="/springloginresources/**" location="/springloginresources/"
+    cache-period="31556927"/>
          
 <!--          <mvc:resources mapping="/resources/**" location="/assets/"
     cache-period="31556926"/>
