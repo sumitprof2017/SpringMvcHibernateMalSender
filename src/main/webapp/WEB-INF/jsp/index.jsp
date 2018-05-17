@@ -1,11 +1,13 @@
-<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
+
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <!--[if IE 8 ]><html class="no-js oldie ie8" lang="en"> <![endif]-->
 <!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
 <!--[if (gte IE 9)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
 <head>
-
+    ${msg1}
+             ${msg2}
    <!--- basic page needs
    ================================================== -->
    <meta charset="utf-8">
@@ -190,23 +192,24 @@
    	<div class="row services-content">
 
    		<div class="services-list block-1-2 block-tab-full group">
-
+ <c:forEach items="${listemployee}" var="employee">
 	      	<div class="bgrid service-item animate-this">	
 
-	      		<span class="icon"><i class="icon-paint-brush"></i></span>            
+	      		<span class="icon"><i class="${employee.icon}"></i></span>            
 
 	            <div class="service-content">
-	            	<h3 class="h05">Branding</h3>
+	            	<h3 class="h05">${employee.heading}</h3>
 
-		            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
+		            <p>${employee.description}
 	         		</p>	         		
-	         	</div> 	 <        	 
+	         	</div> 	
+                                         <        	 
 
 				</div> <!-- end bgrid -->
-
+  </c:forEach>
 				<div class="bgrid service-item animate-this">	
-
-					<span class="icon"><i class="icon-earth"></i></span>                          
+   
+<!--					<span class="icon"><i class="icon-earth"></i></span>                          
 
 	            <div class="service-content">	
 	            	<h3 class="h05">Web Design</h3>  
@@ -215,7 +218,7 @@
 	         		</p>	         		
 	            </div>	                          
 
-			   </div> <!-- end bgrid -->
+			   </div>  end bgrid 
 
 			   <div class="bgrid service-item animate-this">
 
@@ -228,7 +231,7 @@
 	        			</p>
 	            </div> 	            	               
 
-			   </div> <!-- end bgrid -->
+			   </div>  end bgrid 
 
 				<div class="bgrid service-item animate-this">
 
@@ -241,7 +244,7 @@
 	         		</p>	         		
 	            </div>                
 
-				</div> <!-- end bgrid -->			   
+				</div>  end bgrid 			   -->
 
 	      </div> <!-- end services-list -->
    		
@@ -557,9 +560,10 @@
 
       		</form>  -->
 
-                    <form:form  action="/SnewProjectSpringHibernateExamples/add"  method="post" modelAttribute="userFormData">
+                    <form  action="/SnewProjectSpringHibernateExamples/add"  method="post" modelAttribute="userFormData">
 <!--                         < yesari ni garna milxaform  action="${pageContext.request.contextPath}/add"  method="post" modelAttribute="userFormData">-->
-             <table>
+             
+                        <table>
                 <tr>
                     <td align="right"><b>Name</b></td>
                     <td>
@@ -601,8 +605,8 @@
                 
                 
             </table>
-            
-        </form:form>
+              <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
+        </form>
 
             <!-- contact-warning -->
             <div id="message-warning"></div> 

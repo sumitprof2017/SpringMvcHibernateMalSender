@@ -26,7 +26,7 @@ public class DashboardController {
        @Autowired
      private ContentService contentservice;
       
-   @RequestMapping(value="/manage")
+   @RequestMapping(value="/dashboard")
     public ModelAndView getdashboard(){
         ModelAndView mv = new ModelAndView();
         List<Content> psEmployeee = contentservice.getAllContent();
@@ -45,9 +45,14 @@ public class DashboardController {
     }
      @RequestMapping(value = "/delete", method = RequestMethod.GET)
     public ModelAndView deleteContent(HttpServletRequest request) {
+        ModelAndView mv = new ModelAndView();
         Long employeeId = Long.parseLong(request.getParameter("id"));
         contentservice.deleteEmployee(employeeId);
-        return new ModelAndView("delete");
+          List<Content> psEmployeees = contentservice.getAllContent();
+           mv.addObject("listemployeees", psEmployeees);
+           mv.setViewName("delete");
+           return mv;
+        
     }
     
     

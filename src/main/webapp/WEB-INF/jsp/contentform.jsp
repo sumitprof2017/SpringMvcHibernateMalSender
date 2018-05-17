@@ -19,7 +19,7 @@
        ${editbycontent}
         ${punit}
 <!--       Model attribute vanne very imp yesmai object banera uta pathaune ho-->
- <form:form  action="${pageContext.request.contextPath}/updatecontent"  method="post" modelAttribute="content1">
+ <form  action="${pageContext.request.contextPath}/updatecontent"  method="post" modelAttribute="content1">
 <!--                         < yesari ni garna milxaform  action="${pageContext.request.contextPath}/add"  method="post" modelAttribute="userFormData">-->
              <table>
                 
@@ -57,15 +57,15 @@
                 <tr>
                     <td ></td>
                     <td>
-                        <input type="submit" value="send">   
+                        <input type="submit" value="Edit">
                     </td>
                     
                 </tr>
                 
                 
             </table>
-            
-        </form:form>
+              <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
+        </form>
         
         
         

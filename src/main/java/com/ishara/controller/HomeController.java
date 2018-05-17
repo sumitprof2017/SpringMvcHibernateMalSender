@@ -16,6 +16,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.servlet.ModelAndView;
 
 /**
  *
@@ -52,13 +53,13 @@ public class HomeController {
 //
 //}
     @RequestMapping(value="/add",method=RequestMethod.POST)
-    public String addPerson(@RequestParam("name") String name,@RequestParam("email") String email,@RequestParam("subject") String subject,@RequestParam("message") String message) {
+    public ModelAndView addIndexData(@RequestParam("name") String name,@RequestParam("email") String email,@RequestParam("subject") String subject,@RequestParam("message") String message) {
         Person p = new Person();
         p.setName(name);
         p.setEmail(email);
         p.setSubject(subject);
         p.setMessage(message);
-        
+        ModelAndView mv = new ModelAndView();
         int id= personservice.addPerson(p);
         
         if(id!=0){
@@ -69,11 +70,14 @@ public class HomeController {
            NewSessionBean nb = new NewSessionBean();
            nb.sendEmail(email, subject, message);
            //nb.send();
-             
-            return "success";
+             mv.addObject("msg1", "Your data is sent succesfully");
+             mv.setViewName("index");
+           return mv;
         }
         else  {      
-        return "fail";
+        mv.addObject("msg2", "Some troubles occured while send the email");
+        mv.setViewName("index");
+        return mv;
     }
     }
   

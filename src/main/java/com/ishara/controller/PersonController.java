@@ -31,27 +31,9 @@ public class PersonController {
         model.setViewName("home");
         return model;
     }
-    @RequestMapping("/welcome")
-	public ModelAndView helloWorld() {
- 
-		String message = "<br><div style='text-align:center;'>"
-				+ "<h3>********** Hello World, Spring MVC Tutorial</h3>This message is coming from CrunchifyHelloWorld.java **********</div><br><br>";
-		return new ModelAndView("welcome", "message", message);
-	}
+   
       
-@RequestMapping(value="/products")
-   public ModelAndView processProductPage() {
-    ModelAndView mv=new ModelAndView();
-    mv.setViewName("newjsp");
 
-   String products="k xa re bhaiya";//Retrieve products from db
-
-    mv.addObject("products",products);
-    mv.addObject("hello","hai");
-
-
-    return mv;
-   }
    @RequestMapping(value="/display")
    public ModelAndView DisplayPage() {
     ModelAndView mv=new ModelAndView();

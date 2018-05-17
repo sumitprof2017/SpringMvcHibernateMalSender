@@ -42,22 +42,40 @@ public class LoginController {
      
     
     
+//    
+//     @RequestMapping(value = "/checkuser1", method = RequestMethod.POST)
+//    public String submit(@RequestParam("username") String username,@RequestParam("password") String password) {
+//     Login login = new Login();
+//     login.setUsername(username);
+//     login.setPassword(password);
+//     boolean userExists = loginservice.checkLogin(login.getUsername(), login.getPassword());
+//     if(userExists){
+//			
+//			return "index";
+//		}else{
+//			
+//			return "logindashboard";
+//		}
+//    }
     
      @RequestMapping(value = "/checkuser1", method = RequestMethod.POST)
-    public String submit(@RequestParam("username") String username,@RequestParam("password") String password) {
+    public ModelAndView checkusernamepassword(@RequestParam("username") String username,@RequestParam("password") String password) {
+     ModelAndView mv = new ModelAndView();
      Login login = new Login();
      login.setUsername(username);
      login.setPassword(password);
      boolean userExists = loginservice.checkLogin(login.getUsername(), login.getPassword());
      if(userExists){
-			
-			return "dashboard";
+			mv.setViewName("index");
+			return mv;
 		}else{
 			
-			return "logindashboard";
+			mv.setViewName("logindashboard");
+                        mv.addObject("msg", "Sorry Your Credentials are Wrong or empty");
+                        return mv;
 		}
     }
-    //Principal vaneko login gareko user haru.....
+    //Principal vaneko login gareko user haru.....logout garda session end yesle nai garcha
     private String getPrincipal() {
 		String userName = null;
 		Object principal = SecurityContextHolder.getContext()
