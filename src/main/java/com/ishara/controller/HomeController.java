@@ -10,6 +10,9 @@ package com.ishara.controller;
 import com.ishara.bean.NewSessionBean;
 import com.ishara.model.Person;
 import com.ishara.service.PersonService;
+import com.sumit.model.Content;
+import com.sumit.service.ContentService;
+import java.util.List;
 import javax.ejb.EJB;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -28,6 +31,9 @@ public class HomeController {
      @Autowired
      private PersonService personservice;
      
+     @Autowired
+     private ContentService contentservice;
+     
      
      
   @RequestMapping(value="/")
@@ -37,8 +43,14 @@ public class HomeController {
     }
     
      @RequestMapping(value="/index")
-    public String sendEmail(){
-        return "index";
+    public ModelAndView sendEmail(){
+       ModelAndView mv=new ModelAndView();
+    
+  List<Content> psEmployee = contentservice.getAllContent();
+     mv.addObject("listemployee", psEmployee);
+         mv.setViewName("index");
+         return mv;
+        
         //return "index"; modifeied
     }
     

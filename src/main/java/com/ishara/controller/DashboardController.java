@@ -72,14 +72,20 @@ public class DashboardController {
     
      @RequestMapping(value = "/updatecontent", method = RequestMethod.POST)
     public ModelAndView saveEmployee(@ModelAttribute Content content) {
-       if (content.getId() == 0) { // if employee id is 0 then creating the
+       ModelAndView mv = new ModelAndView();
+        if (content.getId() == 0) { // if employee id is 0 then creating the
            // employee other updating the employee
           
             contentservice.addContent(content);
       } else {
             contentservice.updateContent(content);
+               List<Content> psEmployeees = contentservice.getAllContent();
+                mv.addObject("editeddetails", psEmployeees);
        }
-        return new ModelAndView("dashboard");
+      
+          //edit garda edit page ma data ako thiena kina vane else vitra list<content>halna parcha
+           mv.setViewName("edit");
+           return mv;
     }
     
     

@@ -29,7 +29,7 @@ public class ContentDAOImpl implements ContentDAO{
       //small content huda error auxa "From content" vanya yo...file ho Capital Content chainxa
       
     }
-
+//    edit ko data uta tira audaina bcoz display jastai arraylist banako xaina
     @Override
     public int addContent(Content content) {
            Session session = sessionFactory.getCurrentSession();
@@ -49,7 +49,7 @@ public class ContentDAOImpl implements ContentDAO{
     }
 
     
-
+//uta bata ako data lai update matra garne ho
     @Override
     public Content updateContent(Content content) {
            sessionFactory.getCurrentSession().update(content);

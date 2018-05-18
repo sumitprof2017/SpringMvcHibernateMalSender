@@ -7,7 +7,7 @@
     <head>
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
         <meta charset="utf-8" />
-        <title>Dashboard - Ace Admin</title>
+        <title>Delete - Ace Admin</title>
        
         <meta name="description" content="overview &amp; stats" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
@@ -417,11 +417,292 @@
                         <b class="arrow"></b>
                     </li>
                     
-                 
+                    <li class="">
+                        <a href="#" class="dropdown-toggle">
+                            <i class="menu-icon fa fa-desktop"></i>
+                            <span class="menu-text">
+                                UI &amp; Elements
+                            </span>
+                            
+                            <b class="arrow fa fa-angle-down"></b>
+                        </a>
+                        
+                        <b class="arrow"></b>
+                        
+                        <ul class="submenu">
+                            <li class="">
+                                <a href="#" class="dropdown-toggle">
+                                    <i class="menu-icon fa fa-caret-right"></i>
+                                    
+                                    Layouts
+                                    <b class="arrow fa fa-angle-down"></b>
+                                </a>
+                                
+                                <b class="arrow"></b>
+                                
+                                <ul class="submenu">
+                                    <li class="">
+                                        <a href="top-menu.html">
+                                            <i class="menu-icon fa fa-caret-right"></i>
+                                            Top Menu
+                                        </a>
+                                        
+                                        <b class="arrow"></b>
+                                    </li>
+                                    
+                                    <li class="">
+                                        <a href="two-menu-1.html">
+                                            <i class="menu-icon fa fa-caret-right"></i>
+                                            Two Menus 1
+                                        </a>
+                                        
+                                        <b class="arrow"></b>
+                                    </li>
+                                    
+                                    <li class="">
+                                        <a href="two-menu-2.html">
+                                            <i class="menu-icon fa fa-caret-right"></i>
+                                            Two Menus 2
+                                        </a>
+                                        
+                                        <b class="arrow"></b>
+                                    </li>
+                                    
+                                    <li class="">
+                                        <a href="mobile-menu-1.html">
+                                            <i class="menu-icon fa fa-caret-right"></i>
+                                            Default Mobile Menu
+                                        </a>
+                                        
+                                        <b class="arrow"></b>
+                                    </li>
+                                    
+                                    <li class="">
+                                        <a href="mobile-menu-2.html">
+                                            <i class="menu-icon fa fa-caret-right"></i>
+                                            Mobile Menu 2
+                                        </a>
+                                        
+                                        <b class="arrow"></b>
+                                    </li>
+                                    
+                                    <li class="">
+                                        <a href="mobile-menu-3.html">
+                                            <i class="menu-icon fa fa-caret-right"></i>
+                                            Mobile Menu 3
+                                        </a>
+                                        
+                                        <b class="arrow"></b>
+                                    </li>
+                                </ul>
+                            </li>
+                            
+                            <li class="">
+                                <a href="typography.html">
+                                    <i class="menu-icon fa fa-caret-right"></i>
+                                    Typography
+                                </a>
+                                
+                                <b class="arrow"></b>
+                            </li>
+                            
+                            <li class="">
+                                <a href="elements.html">
+                                    <i class="menu-icon fa fa-caret-right"></i>
+                                    Elements
+                                </a>
+                                
+                                <b class="arrow"></b>
+                            </li>
+                            
+                            <li class="">
+                                <a href="buttons.html">
+                                    <i class="menu-icon fa fa-caret-right"></i>
+                                    Buttons &amp; Icons
+                                </a>
+                                
+                                <b class="arrow"></b>
+                            </li>
+                            
+                            <li class="">
+                                <a href="content-slider.html">
+                                    <i class="menu-icon fa fa-caret-right"></i>
+                                    Content Sliders
+                                </a>
+                                
+                                <b class="arrow"></b>
+                            </li>
+                            
+                            <li class="">
+                                <a href="treeview.html">
+                                    <i class="menu-icon fa fa-caret-right"></i>
+                                    Treeview
+                                </a>
+                                
+                                <b class="arrow"></b>
+                            </li>
+                            
+                            <li class="">
+                                <a href="jquery-ui.html">
+                                    <i class="menu-icon fa fa-caret-right"></i>
+                                    jQuery UI
+                                </a>
+                                
+                                <b class="arrow"></b>
+                            </li>
+                            
+                            <li class="">
+                                <a href="nestable-list.html">
+                                    <i class="menu-icon fa fa-caret-right"></i>
+                                    Nestable Lists
+                                </a>
+                                
+                                <b class="arrow"></b>
+                            </li>
+                            
+                            <li class="">
+                                <a href="#" class="dropdown-toggle">
+                                    <i class="menu-icon fa fa-caret-right"></i>
+                                    
+                                    Three Level Menu
+                                    <b class="arrow fa fa-angle-down"></b>
+                                </a>
+                                
+                                <b class="arrow"></b>
+                                
+                                <ul class="submenu">
+                                    <li class="">
+                                        <a href="#">
+                                            <i class="menu-icon fa fa-leaf green"></i>
+                                            Item #1
+                                        </a>
+                                        
+                                        <b class="arrow"></b>
+                                    </li>
+                                    
+                                    <li class="">
+                                        <a href="#" class="dropdown-toggle">
+                                            <i class="menu-icon fa fa-pencil orange"></i>
+                                            
+                                            4th level
+                                            <b class="arrow fa fa-angle-down"></b>
+                                        </a>
+                                        
+                                        <b class="arrow"></b>
+                                        
+                                        <ul class="submenu">
+                                            <li class="">
+                                                <a href="#">
+                                                    <i class="menu-icon fa fa-plus purple"></i>
+                                                    Add Product
+                                                </a>
+                                                
+                                                <b class="arrow"></b>
+                                            </li>
+                                            
+                                            <li class="">
+                                                <a href="#">
+                                                    <i class="menu-icon fa fa-eye pink"></i>
+                                                    View Products
+                                                </a>
+                                                
+                                                <b class="arrow"></b>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
                     
-                   
+                    <li class="">
+                        <a href="#" class="dropdown-toggle">
+                            <i class="menu-icon fa fa-list"></i>
+                            <span class="menu-text"> Tables </span>
+                            
+                            <b class="arrow fa fa-angle-down"></b>
+                        </a>
+                        
+                        <b class="arrow"></b>
+                        
+                        <ul class="submenu">
+                            <li class="">
+                                <a href="tables.html">
+                                    <i class="menu-icon fa fa-caret-right"></i>
+                                    Simple &amp; Dynamic
+                                </a>
+                                
+                                <b class="arrow"></b>
+                            </li>
+                            
+                            <li class="">
+                                <a href="jqgrid.html">
+                                    <i class="menu-icon fa fa-caret-right"></i>
+                                    jqGrid plugin
+                                </a>
+                                
+                                <b class="arrow"></b>
+                            </li>
+                        </ul>
+                    </li>
                     
-                    
+                    <li class="">
+                        <a href="#" class="dropdown-toggle">
+                            <i class="menu-icon fa fa-pencil-square-o"></i>
+                            <span class="menu-text"> Forms </span>
+                            
+                            <b class="arrow fa fa-angle-down"></b>
+                        </a>
+                        
+                        <b class="arrow"></b>
+                        
+                        <ul class="submenu">
+                            <li class="">
+                                <a href="form-elements.html">
+                                    <i class="menu-icon fa fa-caret-right"></i>
+                                    Form Elements
+                                </a>
+                                
+                                <b class="arrow"></b>
+                            </li>
+                            
+                            <li class="">
+                                <a href="form-elements-2.html">
+                                    <i class="menu-icon fa fa-caret-right"></i>
+                                    Form Elements 2
+                                </a>
+                                
+                                <b class="arrow"></b>
+                            </li>
+                            
+                            <li class="">
+                                <a href="form-wizard.html">
+                                    <i class="menu-icon fa fa-caret-right"></i>
+                                    Wizard &amp; Validation
+                                </a>
+                                
+                                <b class="arrow"></b>
+                            </li>
+                            
+                            <li class="">
+                                <a href="wysiwyg.html">
+                                    <i class="menu-icon fa fa-caret-right"></i>
+                                    Wysiwyg &amp; Markdown
+                                </a>
+                                
+                                <b class="arrow"></b>
+                            </li>
+                            
+                            <li class="">
+                                <a href="dropzone.html">
+                                    <i class="menu-icon fa fa-caret-right"></i>
+                                    Dropzone File Upload
+                                </a>
+                                
+                                <b class="arrow"></b>
+                            </li>
+                        </ul>
+                    </li>
                     
                     <li class="">
                         <a href="addallcontent">
@@ -478,9 +759,21 @@
                         <b class="arrow"></b>
                     </li>
                     
-                     
+                      <li class="">
+                        <a href="manage">
+                            <i class="menu-icon fa fa-picture-o"></i>
+                            <span class="menu-text"> Manage Content </span>
+                        </a>
+                        
+                        <b class="arrow"></b>
+                    </li>
                     <li class="">
-                     
+                        <a href="#" class="dropdown-toggle">
+                            <i class="menu-icon fa fa-tag"></i>
+                            <span class="menu-text"> More Pages </span>
+                            
+                            <b class="arrow fa fa-angle-down"></b>
+                        </a>
                         
                         <b class="arrow"></b>
                         
@@ -560,7 +853,17 @@
                     </li>
                     
                     <li class="">
-                     
+                        <a href="#" class="dropdown-toggle">
+                            <i class="menu-icon fa fa-file-o"></i>
+                            
+                            <span class="menu-text">
+                                Other Pages
+                                
+                                <span class="badge badge-primary">5</span>
+                            </span>
+                            
+                            <b class="arrow fa fa-angle-down"></b>
+                        </a>
                         
                         <b class="arrow"></b>
                         
@@ -727,18 +1030,18 @@
    				<h3>Services</h3>
                                 <h4>  </h4>
                                 <h5>   
- <c:forEach items="${listemployeee}" var="employeee">
+ <c:forEach items="${editeddetails}" var="employeeess">
 	      	<div class="bgrid service-item animate-this">	
 
-	      		<span class="icon"><i class="${employeee.icon}"></i></span>            
+	      		<span class="icon"><i class="${employeeess.icon}"></i></span>            
 
 	            <div class="service-content">
-	            	<h3 class="h05">${employeee.heading}</h3>
+	            	<h3 class="h05">${employeeess.heading}</h3>
 
-		            <p>${employeee.description}
+		            <p>${employeeess.description}
 	         		</p>	
-                    <a href="edit?id=${employeee.id}">Edit</a>
-                             <a href="delete?id=${employeee.id}" >Delete</a></td>
+                    <a href="edit?id=${employeeess.id}">Edit</a>
+                             <a href="delete?id=${employeeess.id}" >Delete</a></td>
 <!--                       <a href ko kam chai ......href="delete" vo vane slash ma delete auxa-->
 	         	</div> 	
                                                  	 
